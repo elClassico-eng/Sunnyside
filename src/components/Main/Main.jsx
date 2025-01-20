@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+
+import { ReviewSection } from "./ReviewSection/ReviewSection";
 import { CardDescription } from "./CardDescription/CardDescription";
 
 import { cardData } from "../../data/cardMain";
@@ -10,7 +12,7 @@ export const Main = () => {
 
     return (
         <motion.main>
-            <section className="grid grid-cols-2 grid-rows-3">
+            <section className="grid grid-cols-2 grid-rows-3 mb-20">
                 {cardData.map(({ title, description, bgImage }, index) => (
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -30,7 +32,7 @@ export const Main = () => {
                 ))}
             </section>
 
-            <section className="reviews-section"></section>
+            <ReviewSection />
             <section className="gallery-section"></section>
         </motion.main>
     );

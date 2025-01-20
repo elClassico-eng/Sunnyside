@@ -30,6 +30,7 @@ module.exports = {
             fontAdditional: ["Barlow", "serif"],
         },
         fontSize: {
+            "clamp-extra-xs": "clamp(.9rem, 4vw, 1.2rem)",
             "clamp-xs": "clamp(1rem, 1.3vw, 1.2rem)",
             "clamp-sm": "clamp(1rem, 5vw, 3rem)",
             "clamp-lg": "clamp(2rem, 8vw, 10rem)",
@@ -44,6 +45,9 @@ module.exports = {
                 "url('./src/assets/images/desktop/image-graphic-design.jpg')",
             mainCardImage4:
                 "url('./src/assets/images/desktop/image-photography.jpg')",
+            avatarReviewEmily: "url('./src/assets/images/image-emily.jpg')",
+            avatarReviewJennie: "url('./src/assets/images/image-jennie.jpg')",
+            avatarReviewThomas: "url('./src/assets/images/image-thomas.jpg')",
         },
     },
     plugins: [],
