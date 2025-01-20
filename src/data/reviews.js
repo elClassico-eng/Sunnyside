@@ -23,12 +23,4 @@ export const reviews = [
             "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
         avatar: "avatarReviewJennie",
     },
-    {
-        id: 4,
-        name: "Emily R.",
-        position: "Marketing Director",
-        blockquote:
-            "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
-        avatar: "avatarReviewEmily",
-    },
 ];

@@ -8,19 +8,17 @@ import { cardData } from "../../data/cardMain";
 
 export const Main = () => {
     const commonClasses =
-        "text-clamp-xs px-20 py-20 bg-cover bg-no-repeat bg-center";
+        "text-clamp-xs sm:flex sm:justify-center sm:items-center px-20 py-20 bg-cover bg-no-repeat bg-center";
 
     return (
         <motion.main>
-            <section className="grid grid-cols-2 grid-rows-3 mb-20">
+            <section className="grid sm:grid-cols-1  lg:grid-cols-2 lg:grid-rows-3 xl:grid-cols-2">
                 {cardData.map(({ title, description, bgImage }, index) => (
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, amount: 0.2 }}
-                        transition={{ duration: 0.8 }}
                         key={index}
-                        className={`${commonClasses} ${bgImage || ""}`}
+                        className={`${commonClasses} ${bgImage || ""} ${
+                            index >= cardData.length - 1 ? "" : ""
+                        }`}
                     >
                         {title && description && (
                             <CardDescription

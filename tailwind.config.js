@@ -3,10 +3,15 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        extend: {
+            gridTemplateRows: {
+                "custom-rows": "repeat(auto-fill, minmax(700px, 1fr))",
+            },
+        },
         screens: {
             sm: "480px",
-            md: "768 px",
-            lg: "976 px",
+            md: "768px",
+            lg: "976px",
             xl: "1440px ",
         },
         colors: {
