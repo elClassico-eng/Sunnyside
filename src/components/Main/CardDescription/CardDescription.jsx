@@ -1,27 +1,40 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-export const CardDescription = ({ title, description, isAbsolute, cardId }) => {
-    const styleAbsolute = isAbsolute
-        ? "absolute  bottom-0 text-center justify-center items-center"
-        : "";
-    const styleForLastCard = isAbsolute ? "w-1/2" : "";
-    const styleForCard5 = cardId === 5 && "text-darkDesaturatedCyan";
-    const styleForCard6 = cardId === 6 && "text-darkBlue";
-
+export const CardDescription = ({
+    title,
+    description,
+    imgMobile,
+    imgDesktop,
+    hasImg,
+}) => {
     return (
-        <div className={`${styleAbsolute} flex flex-col gap-6 `}>
-            <h2
-                className={`${
-                    cardId === 5 && "text-darkDesaturatedCyan font-bold"
-                } ${cardId === 6 && "text-darkBlue font-bold"}  text-clamp-sm`}
-            >
-                {title}
-            </h2>
-            <p
-                className={`${styleForLastCard} ${styleForCard5} ${styleForCard6}`}
-            >
-                {description}
-            </p>
-        </div>
+        <motion.div
+            className="relative flex justify-center items-center w-full"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+        >
+            {hasImg && (
+                <picture>
+                    <source media="(min-width: 767px)" srcSet={imgMobile} />
+                    <source media="(min-width: 768px)" srcSet={imgDesktop} />
+                    <img className="w-full object-fill" src={imgDesktop} />
+                </picture>
+            )}
+            <div className="absolute flex flex-col gap-7 font-fontMain w-2/3 h-auto">
+                <h2 className=" font-bold text-clamp-sm">{title}</h2>
+                <p className="font-fontAdditional">{description}</p>
+                {!hasImg && (
+                    <a
+                        className="hover:underline hover:decoration-red  decoration-2 uppercase w-max"
+                        href="#"
+                    >
+                        Learn more
+                    </a>
+                )}
+            </div>
+        </motion.div>
     );
 };

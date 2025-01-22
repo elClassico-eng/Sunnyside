@@ -8,7 +8,6 @@ export const App = () => {
         <>
             <Header />
             <Main />
-            <footer></footer>
         </>
     );
 };

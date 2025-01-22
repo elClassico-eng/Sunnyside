@@ -42,14 +42,6 @@ module.exports = {
         },
         backgroundImage: {
             headerImage: "url('./src/assets/images/desktop/image-header.jpg')",
-            mainCardImage1:
-                "url('./src/assets/images/desktop/image-transform.jpg')",
-            mainCardImage2:
-                "url('./src/assets/images/desktop/image-stand-out.jpg')",
-            mainCardImage3:
-                "url('./src/assets/images/desktop/image-graphic-design.jpg')",
-            mainCardImage4:
-                "url('./src/assets/images/desktop/image-photography.jpg')",
             avatarReviewEmily: "url('./src/assets/images/image-emily.jpg')",
             avatarReviewJennie: "url('./src/assets/images/image-jennie.jpg')",
             avatarReviewThomas: "url('./src/assets/images/image-thomas.jpg')",
