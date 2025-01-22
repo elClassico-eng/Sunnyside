@@ -3,7 +3,7 @@ import React from "react";
 import { NavLink } from "./NavLink";
 import { Button } from "../../UI/Button";
 
-export const Navigation = () => {
+export const Navigation = ({ isButton, isFooter }) => {
     return (
         <nav class="gap-20 flex items-center">
             <ul className="gap-7 flex items-center">
@@ -11,7 +11,7 @@ export const Navigation = () => {
                 <NavLink text="Services" href="#" />
                 <NavLink text="Projects" href="#" />
             </ul>
-            <Button text="Contact" />
+            {isButton && <Button text="Contacts" />}
         </nav>
     );
 };

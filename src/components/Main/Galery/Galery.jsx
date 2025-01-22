@@ -26,7 +26,7 @@ export const Galery = () => {
 
     return (
         <motion.section
-            className="w-full h-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-10"
+            className="w-full h-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
             initial={{
                 opacity: 0,
                 y: 20,

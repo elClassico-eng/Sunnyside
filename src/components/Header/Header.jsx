@@ -1,5 +1,5 @@
 import React from "react";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Navigation } from "./Navigate/Navigation.jsx";
 
@@ -13,7 +13,7 @@ export const Header = () => {
                 <div class="flex items-center">
                     <img src={logoSvg} alt="Logo Sunnyside" />
                 </div>
-                <Navigation />
+                <Navigation isButton={true} />
             </div>
             <div class="flex justify-center items-center flex-col">
                 <motion.h1
