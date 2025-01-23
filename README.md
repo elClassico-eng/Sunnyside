@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Sunnyside Landing Page]![image](https://github.com/user-attachments/assets/c84e4f86-07b6-4571-b842-11e1a964aef8)
+![Sunnyside Landing Page]![image]![image](https://github.com/user-attachments/assets/8e6040cc-4cf3-42df-a76c-08c3d0e0f920)
+
 
 
 ### Links
