@@ -4,12 +4,18 @@ import { motion } from "framer-motion";
 import { Navigation } from "./Navigate/Navigation.jsx";
 import { HamburgerMenu } from "../UI/HamburgerMenu/HamburgerMenu.jsx";
 
+import headerImg from "../../assets/images/desktop/image-header.jpg";
 import logoSvg from "../../assets/images/logo.svg";
 import arrowDownSvg from "../../assets/images/icon-arrow-down.svg";
 
 export const Header = () => {
     return (
-        <header className="font-fontMain p-8 min-h-screen bg-headerImage bg-no-repeat bg-cover bg-center">
+        <header className="relative font-fontMain p-8 min-h-screen ">
+            <img
+                className="absolute top-0 left-0 -z-10 w-full h-full object-cover object-center"
+                src={headerImg}
+                alt=""
+            />
             <div class="flex justify-between mb-20 items-center">
                 <div class="flex items-center">
                     <img src={logoSvg} alt="Logo Sunnyside" />

@@ -44,12 +44,6 @@ module.exports = {
             "clamp-sm": "clamp(1rem, 5vw, 3rem)",
             "clamp-lg": "clamp(2rem, 8vw, 10rem)",
         },
-        backgroundImage: {
-            headerImage: "url('./src/assets/images/desktop/image-header.jpg')",
-            avatarReviewEmily: "url('./src/assets/images/image-emily.jpg')",
-            avatarReviewJennie: "url('./src/assets/images/image-jennie.jpg')",
-            avatarReviewThomas: "url('./src/assets/images/image-thomas.jpg')",
-        },
     },
     plugins: [],
 };
