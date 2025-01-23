@@ -6,7 +6,6 @@ import { aVar } from "../../../Animation/animation";
 export const NavLink = ({ text, href, isHeader }) => {
     return (
         <motion.li
-            href={href}
             variants={aVar}
             whileTap="tap"
             whileHover="hover"
@@ -14,7 +13,13 @@ export const NavLink = ({ text, href, isHeader }) => {
                 isHeader ? "text-white" : "text-darkDesaturatedCyan"
             } font-medium`}
         >
-            <motion.a>{text}</motion.a>
+            <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer cursor-pointer"
+            >
+                {text}
+            </a>
         </motion.li>
     );
 };

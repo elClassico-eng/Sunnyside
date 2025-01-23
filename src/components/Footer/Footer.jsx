@@ -15,9 +15,17 @@ export const Footer = () => {
         <footer className="bg-footerBg flex flex-col gap-10 justify-center items-center w-full h-64">
             <img src={logoSvg} alt="Logo Sunnyside" />
             <ul className="flex gap-12 items-center">
-                <NavLink text="About" isHeader={false} href="#" />
+                <NavLink
+                    text="About"
+                    isHeader={false}
+                    href="https://www.frontendmentor.io/challenges/agency-landing-page-7yVs3B6ef"
+                />
                 <NavLink text="Services" isHeader={false} href="#" />
-                <NavLink text="Projects" isHeader={false} href="#" />
+                <NavLink
+                    text="Projects"
+                    isHeader={false}
+                    href="https://www.frontendmentor.io/profile/elClassico-eng"
+                />
             </ul>
             <div className="flex gap-4 justify-center">
                 <SocialLink socialUrl={svgFacebook} />
