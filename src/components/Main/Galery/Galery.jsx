@@ -14,37 +14,8 @@ import imgOrangeDesktop from "../../../assets/images/desktop/image-gallery-orang
 import imgSugarCubesDesktop from "../../../assets/images/desktop/image-gallery-sugarcubes.jpg";
 
 export const Galery = () => {
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.3,
-            },
-        },
-    };
-
     return (
-        <motion.section
-            className="w-full h-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
-            initial={{
-                opacity: 0,
-                y: 20,
-                scale: 0.7,
-            }}
-            whileInView={{
-                opacity: 1,
-                y: 0,
-            }}
-            viewport={{ once: true, amount: 0.2 }}
-            animate={{
-                scale: 1,
-            }}
-            transition={{
-                duration: 2,
-            }}
-            variants={containerVariants}
-        >
+        <motion.section className="w-full h-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             <Picture
                 imgSrc={imgMilkBottlesDesktop}
                 alt="3 bottles on a background of clouds"

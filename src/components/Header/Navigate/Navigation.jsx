@@ -1,7 +1,7 @@
 import React from "react";
 
 import { NavLink } from "../../UI/NavLinks/NavLink";
-import { Button } from "../../UI/Button";
+import { Button } from "../../UI/Button/Button";
 
 export const Navigation = ({ isButton }) => {
     return (

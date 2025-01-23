@@ -36,6 +36,7 @@ module.exports = {
             fontAdditional: ["Barlow", "serif"],
         },
         fontSize: {
+            16: "16px",
             "clamp-extra-xs": "clamp(.9rem, 4vw, 1.2rem)",
             "clamp-xs": "clamp(1rem, 1.3vw, 1.2rem)",
             "clamp-sm": "clamp(1rem, 5vw, 3rem)",

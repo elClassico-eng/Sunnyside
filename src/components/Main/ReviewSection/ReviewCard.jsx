@@ -2,25 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { reviews } from "../../../data/reviews.js";
+import { cardVar } from "../../../Animation/animation.js";
 
 export const ReviewCard = () => {
-    const cardVar = {
-        hover: {
-            scale: 1.05,
-            transition: {
-                duration: 0.3,
-            },
-        },
-        tap: {
-            scale: 0.95,
-            transition: {
-                duration: 0.2,
-            },
-        },
-    };
-
     return (
-        <div className="flex gap-14 flex-wrap justify-center items-center">
+        <div className="flex gap-20 flex-wrap justify-center items-center">
             {reviews.length > 0 ? (
                 reviews.map(({ id, name, position, blockquote, avatar }) => (
                     <motion.article
@@ -44,18 +30,20 @@ export const ReviewCard = () => {
                         variants={cardVar}
                         whileTap="tap"
                         whileHover="hover"
-                        className="flex flex-col  items-center justify-between w-72 gap-6 text-clamp-xs text-darkGrayishBlue"
+                        className="flex flex-col  items-center justify-between w-72 gap-12 text-clamp-xs text-darkGrayishBlue"
                     >
                         <div
-                            className="w-16 h-16 bg-no-repeat bg-cover rounded-full bg-center bg-red"
-                            style={{ backgroundImage: `url(${avatar || ""})` }}
+                            className="w-20 h-20 bg-cover bg-center rounded-full"
+                            style={{
+                                backgroundImage: `url(${avatar})`,
+                            }}
                         ></div>
                         <blockquote>{blockquote}</blockquote>
-                        <div className="">
-                            <h3 className="text-black font-bold  uppercase">
+                        <div>
+                            <h3 className="text-black font-extrabold font-fontMain uppercase">
                                 {name}
                             </h3>
-                            <p>{position}</p>
+                            <p className="text-16">{position}</p>
                         </div>
                     </motion.article>
                 ))
