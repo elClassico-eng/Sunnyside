@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { Navigation } from "./Navigate/Navigation.jsx";
+import { HamburgerMenu } from "../UI/HamburgerMenu/HamburgerMenu.jsx";
 
 import logoSvg from "../../assets/images/logo.svg";
 import arrowDownSvg from "../../assets/images/icon-arrow-down.svg";
@@ -13,7 +14,12 @@ export const Header = () => {
                 <div class="flex items-center">
                     <img src={logoSvg} alt="Logo Sunnyside" />
                 </div>
-                <Navigation isButton={true} />
+                <div className="md:hidden">
+                    <HamburgerMenu />
+                </div>
+                <div className="hidden md:flex">
+                    <Navigation isButton={true} />
+                </div>
             </div>
             <div class="flex justify-center items-center flex-col">
                 <motion.h1

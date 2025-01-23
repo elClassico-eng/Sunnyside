@@ -21,6 +21,7 @@ module.exports = {
             darkDesaturatedCyan: "hsl(167, 40%, 24%)",
             darkBlue: "hsl(198, 62%, 26%)",
             darkModerateCyan: "hsl(168, 34%, 41%)",
+            blue: "hsl(200, 100%, 62%)",
             footerBg: "hsl(167, 44%, 70%)",
             black: "#000",
             btnHover: "rgba(255, 255, 255, 0.4)",
